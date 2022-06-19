@@ -1,5 +1,7 @@
 # toyProject-advertisingPlatform
 
+본 프로젝트는 이커머스 업체가 판매하는 상품을 광고하고자 할 때, 필요한 비즈니스 서비스와  API를 개발하는 것을 목표로 한다.
+
 ## 1. 환경설정
 + Java 8
 + Spring Boot Version 2.6.8
