@@ -73,7 +73,15 @@ AdvertisementBilling과 Advertisement는 N:1 관계이다.
 
 #### 3.2.1 Advertisement 등록
 
+광고하는 Item과 Company가 서로 연관되었는지 확인이 필요하다.
+
 #### 3.2.2 Advertisement 전시
+
+등록된 전체 광고 중 재고(stock)가 존재하고, 입찰가격(biddingPrice)이 높은 상위 3개를 Json 형태로 반환한다.
+
+Json Response에 Company와 Item에 대한 정보를 추가하기 위해 Fetch Join이 필요하며,
+
+재고가 존재하는 상위 광고 3개를 조회하기 위해, JPQL에 적절한 Where와 Order By를 추가해야한다. 
 
 ***
 
@@ -82,5 +90,7 @@ AdvertisementBilling과 Advertisement는 N:1 관계이다.
 #### 3.3.1 AdvertisementBilling 저장
 
 #### 3.3.2 AdvertisementBilling 집계
+
+
 
 
