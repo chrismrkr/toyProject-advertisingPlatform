@@ -21,14 +21,14 @@
 
 Company는 Item(상품), Advertisement(광고), 그리고 Contract(계약)을 관리하는 주체이다.
 
-Company: (companyId, companyName, serialNumber, telNumber, address)
+**Company: (companyId, companyName, serialNumber, telNumber, address)**
 
 
 ### 2.2 Item
 
 Item은 Company를 통해서만 생성될 수 있는 엔티티이다. Item과 Company는 N:1 관계를 갖는다.
 
-Item: (itemId, itemName, price, stock, companyId(fk))
+**Item: (itemId, itemName, price, stock, companyId(fk))**
 
 ### 2.3 Contract
 
@@ -36,7 +36,7 @@ Contract는 Company를 통해서만 생성될 수 있는 엔티티이다. Contra
 
 Company의 Contract들은 서로 계약기간이 중복될 수 없다.
 
-Contract: (contractId, startDate, endDate, companyId(fk))
+**Contract: (contractId, startDate, endDate, companyId(fk))**
 
 ### 2.4 Advertisement
 
@@ -45,7 +45,7 @@ Advertisement는 Company가 등록한 Item을 광고한다는 정보를 갖는 �
 + 1. Company는 Contract가 존재한다.
 + 2. 광고되는 Item은 Company가 등록한 것이다.
 
-Advertisement: (advertisementId, biddingPrice, companyId(fk), ItemId(fk))
+**Advertisement: (advertisementId, biddingPrice, companyId(fk), ItemId(fk))**
 
 ### 2.5 AdvertisementBilling
 
@@ -53,4 +53,8 @@ AdvertisementBilling은 고객이 광고를 클릭할 때 발생하는 정보를
 
 AdvertisementBilling과 Advertisement는 N:1 관계이다.
 
-Advertisementbilling: (advertisementBillingId, clickTime, biddingPrice, advertisementId(fk))
+**Advertisementbilling: (advertisementBillingId, clickTime, biddingPrice, advertisementId(fk))**
+
+## 3. 주요 비즈니스 로직
+
+### 3.1 
