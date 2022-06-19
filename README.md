@@ -91,6 +91,19 @@ Json Response에 Company와 Item에 대한 정보를 추가하기 위해 Fetch J
 
 #### 3.3.2 AdvertisementBilling 집계
 
+저장된 AdvertisementBilling을 일별 집계한다.
+
+집계를 위해서는 AdvertisementBilling의 (광고ID, 입찰가격, 광고클릭시간), Advertisement의 (광고 ID), Company의 (업체ID, 업체명), Item의 (상품ID, 상품명)이 필요하다.
+
+AdvertisementBilling와 Advertisement는 광고ID를 통해 조인할 수 있고,
+
+Advertisement와 Company는 업체ID를 통해 조인할 수 있고,
+
+Advertisement와 Item은 상품ID를 통해 조인할 수 있다.
+
+적절히 조인하여 원하는 Attribute를 가져와 일별 집계 데이터를 생성할 수 있다.
+
+
 
 
 
