@@ -53,8 +53,34 @@ AdvertisementBilling은 고객이 광고를 클릭할 때 발생하는 정보를
 
 AdvertisementBilling과 Advertisement는 N:1 관계이다.
 
-**Advertisementbilling: (advertisementBillingId, clickTime, biddingPrice, advertisementId(fk))**
+**AdvertisementBilling: (advertisementBillingId, clickTime, biddingPrice, advertisementId(fk))**
 
-## 3. 주요 비즈니스 로직
+## 3. 주요 비즈니스 서비스
 
-### 3.1 
+### 3.1 Company
+
+#### 3.1.1 Company 등록
+
+#### 3.1.2 Item 등록
+
+#### 3.1.3 Item 조회
+
+#### 3.1.4 Contract 등록
+
+***
+
+### 3.2 Advertisement
+
+#### 3.2.1 Advertisement 등록
+
+#### 3.2.2 Advertisement 전시
+
+***
+
+### 3.3 AdvertisementBilling
+
+#### 3.3.1 AdvertisementBilling 저장
+
+#### 3.3.2 AdvertisementBilling 집계
+
+
